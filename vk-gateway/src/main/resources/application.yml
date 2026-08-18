@@ -1,0 +1,43 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: vk-gateway
+  kafka:
+    bootstrap-servers: host.docker.internal:9092
+    consumer:
+      value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
+    listener:
+      observation-enabled: true
+    template:
+      observation-enabled: true
+
+app:
+  vk:
+    create-comment-method-url: https://api.vk.com/method/wall.createComment?v=5.199
+    access-token: # from environment variable APP_VK_ACCESS_TOKEN
+    post-id: 16
+    owner-id : -237133367
+  events:
+    vk-gateway:
+      topic: vk-gateway-topic
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  tracing:
+    enabled: true
+    sampling:
+      probability: 1
+  otlp:
+    tracing:
+      endpoint: http://host.docker.internal:4318/v1/traces
+
+logging:
+  pattern:
+    console: "%d{ISO8601} [%thread] [%-5level] [%X{traceId},%X{spanId}] %logger{36}.%method - %msg %n"
+  level:
+    root: info
+    org.apache.kafka: warn

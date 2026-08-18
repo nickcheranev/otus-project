@@ -1,0 +1,7 @@
+/.idea/
+/*/target/
+/.gigacode/
+/.gigaide/
+/.run/
+/vk-token.txt
+/docker/*.jar

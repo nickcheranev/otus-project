@@ -1,0 +1,78 @@
+# docker compose up -d
+version: "3.9"
+name: otus-project
+services:
+
+  authorization-server:
+    container_name: authorization-server-otus
+    hostname: authorization-server
+    build:
+      context: .
+      dockerfile: Dockerfile-authorization-server
+    expose:
+      - "8080"
+    ports:
+      - "8080:8080"
+    entrypoint: [ "java","-Djava.security.egd=file:/dev/./urandom","-jar","app.jar" ]
+
+  rss-extractor:
+    container_name: rss-extractor-otus
+    hostname: rss-extractor
+    build:
+      context: .
+      dockerfile: Dockerfile-rss-extractor
+    expose:
+      - "8080"
+    ports:
+      - "8081:8080"
+    entrypoint: [ "java","-Djava.security.egd=file:/dev/./urandom","-jar","app.jar" ]
+
+  article-storage:
+    container_name: article-storage-otus
+    hostname: article-storage
+    build:
+      context: .
+      dockerfile: Dockerfile-article-storage
+    expose:
+      - "8080"
+    ports:
+      - "8082:8080"
+    entrypoint: [ "java","-Djava.security.egd=file:/dev/./urandom","-jar","app.jar" ]
+
+  subscriber-storage:
+    container_name: subscriber-storage-otus
+    hostname: subscriber-storage
+    build:
+      context: .
+      dockerfile: Dockerfile-subscriber-storage
+    expose:
+      - "8080"
+    ports:
+      - "8083:8080"
+    entrypoint: [ "java","-Djava.security.egd=file:/dev/./urandom","-jar","app.jar" ]
+
+  article-publisher:
+    container_name: article-publisher-otus
+    hostname: article-publisher
+    build:
+      context: .
+      dockerfile: Dockerfile-article-publisher
+    expose:
+      - "8080"
+    ports:
+      - "8084:8080"
+    entrypoint: [ "java","-Djava.security.egd=file:/dev/./urandom","-jar","app.jar" ]
+
+  vk-gateway:
+    container_name: vk-gateway-otus
+    hostname: vk-gateway
+    build:
+      context: .
+      dockerfile: Dockerfile-vk-gateway
+    environment:
+      - APP_VK_ACCESS_TOKEN=
+    expose:
+      - "8080"
+    ports:
+      - "8085:8080"
+    entrypoint: [ "java","-Djava.security.egd=file:/dev/./urandom","-jar","app.jar" ]

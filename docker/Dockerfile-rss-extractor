@@ -1,0 +1,2 @@
+FROM openjdk:17.0.2-jdk-slim
+COPY rss-extractor-0.1.0.jar app.jar

@@ -10,16 +10,16 @@
 статьям категорий, отправку статей в каналы пользователей (VK), согласно присвоенных категорий.  
 
 1. Проект состоит из 6 модулей:
-   1. rss-extractor - загрузчик RSS лент из внешних интернет ресурсов. 
+   1. ****rss-extractor**** - загрузчик RSS лент из внешних интернет ресурсов. 
    Применены: integration, jpa, oauth2, rest, kafka, actuator, tracing
-   2. article-storage - хранилище статей и категорий, также выполняет присвоение статьям категорий. 
+   2. ****article-storage**** - хранилище статей и категорий, также выполняет присвоение статьям категорий. 
    Применены: jpa, kafka, oauth2, rest, actuator, aop, tracing
-   3. subscriber-storage - хранилище подписчиков и их категорий. Применены: jpa, kafka, oauth2, rest, actuator, tracing
-   4. article-publisher - публикатор статей, отправляет статьи в каналы подписчиков, согласно их предпочтениям (категориям). 
+   3. ****subscriber-storage**** - хранилище подписчиков и их категорий. Применены: jpa, kafka, oauth2, rest, actuator, tracing
+   4. ****article-publisher**** - публикатор статей, отправляет статьи в каналы подписчиков, согласно их предпочтениям (категориям). 
    Применены: jpa, kafka, oauth2, rest, actuator, tracing
-   5. vk-gateway - шлюз для взаимодействия с ВК (в проекте реализован только этот канал для публикации). 
-   Применены: jpa, kafka, oauth2, rest, open-feign, actuator, tracing
-   6. authorization-server - сервер авторизации. Микросервисы используют авторизацию http запросов machine-to-machine c JWT. 
+   5. ****vk-gateway**** - шлюз для взаимодействия с ВК (в проекте реализован только этот канал для публикации). 
+   Применены: jpa, kafka, oauth2, rest, open-feign, retry, actuator, tracing
+   6. ****authorization-server**** - сервер авторизации. Микросервисы используют авторизацию http запросов machine-to-machine c JWT. 
    Применены: oauth2, actuator
    
 2. Основной бизнес процесс:
