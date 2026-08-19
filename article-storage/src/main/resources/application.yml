@@ -1,0 +1,66 @@
+server:
+  port : 8080
+spring:
+  application:
+    name: article-storage
+  kafka:
+    bootstrap-servers: host.docker.internal:9092
+    consumer:
+      value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    listener:
+      observation-enabled: true
+    template:
+      observation-enabled: true
+  aop:
+    proxy-target-class: true
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://authorization-server:8080
+      client:
+        registration:
+          article-storage:
+            provider: auth-server
+            client-id: "article-storage"
+            client-secret: "article-storage-secret"  # В реальном приложении использовать зашифрованные значения
+            client-authentication-method: client_secret_basic
+            authorization-grant-type: client_credentials
+            scope:
+              - internal.read
+        provider:
+          auth-server:
+            token-uri: http://authorization-server:8080/oauth2/token
+
+app:
+  resources:
+    rss-extractor:
+      url: http://rss-extractor:8080
+  events:
+    rss-feed-received:
+      topic: rss-feed-received-topic
+    article-created:
+      topic: article-created-topic
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  tracing:
+    enabled: true
+    sampling:
+      probability: 1
+  otlp:
+    tracing:
+      endpoint: http://host.docker.internal:4318/v1/traces
+
+logging:
+  pattern:
+    console: "%d{ISO8601} [%thread] [%-5level] [%X{traceId},%X{spanId}] %logger{36}.%method - %msg %n"
+  level:
+    root: info
+    org.apache.kafka: warn

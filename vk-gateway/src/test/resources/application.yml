@@ -1,0 +1,26 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: vk-gateway
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
+  main:
+    web-application-type: NONE
+
+app:
+  vk:
+    create-comment-method-url: https://api.vk.com/method/wall.createComment?v=5.199
+    access-token: # from environment variable APP_VK_ACCESS_TOKEN
+    post-id: 16
+    owner-id : -237133367
+  events:
+    vk-gateway:
+      topic: vk-gateway-topic
+
+logging:
+  level:
+    root: info
+    org.apache.kafka: warn

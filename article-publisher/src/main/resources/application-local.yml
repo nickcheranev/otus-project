@@ -1,0 +1,18 @@
+server:
+  port: 8084
+
+spring:
+  kafka:
+    bootstrapServers: localhost:9092
+
+app:
+  resources:
+    article-storage:
+      url: http://localhost:8082
+    subscriber-storage:
+      url: http://localhost:8083
+
+management:
+  otlp:
+    tracing:
+      endpoint: http://localhost:4318/v1/traces

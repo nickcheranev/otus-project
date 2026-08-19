@@ -1,0 +1,46 @@
+server:
+  port : 8080
+
+spring:
+  application:
+    name: rss-extractor
+  kafka:
+    bootstrap-servers: host.docker.internal:9092
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    listener:
+      observation-enabled: true
+    template:
+      observation-enabled: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://authorization-server:8080
+app:
+  source:
+    url: https://habr.com/ru/rss/articles/
+    key: habr
+  events:
+    rss-feed-received:
+      topic: rss-feed-received-topic
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  tracing:
+    enabled: true
+    sampling:
+      probability: 1
+  otlp:
+    tracing:
+      endpoint: http://host.docker.internal:4318/v1/traces
+
+logging:
+  pattern:
+    console: "%d{ISO8601} [%thread] [%-5level] [%X{traceId},%X{spanId}] %logger{36}.%method - %msg %n"
+  level:
+    root: info
+    org.apache.kafka: warn

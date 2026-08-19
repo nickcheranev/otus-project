@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <language>ru</language>
+        <title>NEWS.ru</title>
+        <description>
+            Все актуальные новости России и мира на портале News.ru. Самая свежая информация в режиме реального времени. Фото, видеоматериалы, репортажи и интервью.
+        </description>
+        <atom:link href="http://news.ru/rss/" rel="self" type="application/rss+xml" />
+        <link>https://news.ru/</link>
+        <image>
+            <url>https://news.ru/public/desktop/images/logo/logo.png</url>
+            <title>NEWS.ru</title>
+            <link>https://news.ru/</link>
+            <width>144</width>
+            <height>52</height>
+        </image>
+        <item>
+            <guid isPermaLink="false">https://news.ru/world/ria-novosti-hezbolla-vzyala-otvetstvennost-za-obstrely-severa-izrailya/</guid>
+            <title>
+                <![CDATA[Хезболла взяло ответственность за обстрел Израиля и присоединилось к ХАМАС]]>
+            </title>
+            <link>https://news.ru/world/ria-novosti-hezbolla-vzyala-otvetstvennost-za-obstrely-severa-izrailya/</link>
+            <description>
+                <![CDATA[Ливанское движение «Хезболла» взяло ответственность за обстрел трех позиций израильской армии на севере страны и присоединилось к палестинскому ХАМАС.]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 09:13:36 +0300</pubDate>
+            <category>
+                <![CDATA[Мир]]>
+            </category>
+        </item>
+        <item>
+            <guid isPermaLink="false">https://news.ru/russia/pravyj-sektor-ubil-bolee-20-zhitelej-snigirevki-za-prorossijskie-vzglyady/</guid>
+            <title>
+                <![CDATA[«Правый сектор» убил более 20 жителей Снигиревки за пророссийские взгляды]]>
+            </title>
+            <link>https://news.ru/russia/pravyj-sektor-ubil-bolee-20-zhitelej-snigirevki-za-prorossijskie-vzglyady/</link>
+            <description>
+                <![CDATA[РИА Новости: «Правый сектор» убил 22 жителя Снигиревки]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 09:04:07 +0300</pubDate>
+            <category>
+                <![CDATA[Россия]]>
+            </category>
+        </item>
+        <item>
+            <guid isPermaLink="false">https://news.ru/society/sinoptik-rasskazala-o-rezkom-poteplenii-v-moskve-na-sleduyushej-nedele/</guid>
+            <title>
+                <![CDATA[Синоптик рассказала о резком потеплении в Москве на следующей неделе]]>
+            </title>
+            <link>https://news.ru/society/sinoptik-rasskazala-o-rezkom-poteplenii-v-moskve-na-sleduyushej-nedele/</link>
+            <description>
+                <![CDATA[Синоптик Шувалов: в Москве с середины следующей недели потеплеет до плюс 15 ]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 09:00:19 +0300</pubDate>
+            <enclosure url='https://static.news.ru/photo/f14b4782-6463-11ee-9a69-02420a0000c9_930.jpg' length='0' type="image/jpeg"/>
+            <category>
+                <![CDATA[Общество]]>
+            </category>
+        </item>
+        <item>
+            <guid isPermaLink="false">https://news.ru/society/rossiyanam-starshe-30-let-dali-sovet-po-umensheniyu-hronicheskoj-ustalosti/</guid>
+            <title>
+                <![CDATA[Названы способы меньше уставать после 30 лет]]>
+            </title>
+            <link>https://news.ru/society/rossiyanam-starshe-30-let-dali-sovet-po-umensheniyu-hronicheskoj-ustalosti/</link>
+            <description>
+                <![CDATA[Физиотерапевт Бондаренко: людям старше 30 лет нужно много двигаться]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 08:52:14 +0300</pubDate>
+            <enclosure url='https://static.news.ru/photo/1007ed42-6595-11ee-979d-02420a0000c9_930.jpg' length='0' type="image/jpeg"/>
+            <category>
+                <![CDATA[Общество]]>
+            </category>
+        </item>
+        <item>
+            <guid isPermaLink="false">https://news.ru/asia/bolee-dvuh-tysyach-chelovek-pogibli-v-afganistane-v-rezultate-zemletryaseniya/</guid>
+            <title>
+                <![CDATA[Более 2 тысяч человек погибли в Афганистане в результате землетрясения]]>
+            </title>
+            <link>https://news.ru/asia/bolee-dvuh-tysyach-chelovek-pogibli-v-afganistane-v-rezultate-zemletryaseniya/</link>
+            <description>
+                <![CDATA[В субботу 7 октября на западе Афганистана произошло землетрясение, а затем афтершоки, в результате которых погибли две тысячи человек.]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 08:49:54 +0300</pubDate>
+            <enclosure url='https://static.news.ru/photo/d67225fa-65a0-11ee-b75f-02420a0000c9_930.jpg' length='0' type="image/jpeg"/>
+            <category>
+                <![CDATA[Азия]]>
+            </category>
+        </item>
+        <item>
+            <guid isPermaLink="false">https://news.ru/russia/operator-bespilotnika-pryamym-popadaniem-unichtozhil-ukrainskij-blindazh/</guid>
+            <title>
+                <![CDATA[Оператор беспилотника одним ударом уничтожил украинский блиндаж ]]>
+            </title>
+            <link>https://news.ru/russia/operator-bespilotnika-pryamym-popadaniem-unichtozhil-ukrainskij-blindazh/</link>
+            <description>
+                <![CDATA[Оператор FPV-дрона прямым попаданием уничтожил блиндаж украинских военных]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 08:47:02 +0300</pubDate>
+            <enclosure url='https://static.news.ru/photo/60d6f336-659e-11ee-856c-02420a0000c9_930.jpg' length='0' type="image/jpeg"/>
+            <category>
+                <![CDATA[Россия]]>
+            </category>
+        </item>
+        <item>
+            <guid isPermaLink="false">https://news.ru/near-east/v-palestine-uvelichilos-chislo-pogibshih-i-postradavshih-pri-obstrelah-izrailya/</guid>
+            <title>
+                <![CDATA[В Палестине увеличилось число погибших и пострадавших при обстрелах Израиля]]>
+            </title>
+            <link>https://news.ru/near-east/v-palestine-uvelichilos-chislo-pogibshih-i-postradavshih-pri-obstrelah-izrailya/</link>
+            <description>
+                <![CDATA[Минздрав Палестины сообщил о 256 погибших в результате обстрелов ЦАХАЛ]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 08:41:20 +0300</pubDate>
+            <enclosure url='https://static.news.ru/photo/e33f5760-659d-11ee-95f6-02420a0000c9_930.jpg' length='0' type="image/jpeg"/>
+            <category>
+                <![CDATA[Ближний Восток]]>
+            </category>
+        </item>
+        <item>
+            <guid isPermaLink="false">https://news.ru/near-east/chislo-postradavshih-pri-obstrelah-izrailya-prevysila-1800/</guid>
+            <title>
+                <![CDATA[Число пострадавших при обстрелах Израиля превысило 1800]]>
+            </title>
+            <link>https://news.ru/near-east/chislo-postradavshih-pri-obstrelah-izrailya-prevysila-1800/</link>
+            <description>
+                <![CDATA[Минздрав Израиля: число пострадавших при обстрелах достигло 1864 человек]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 08:15:37 +0300</pubDate>
+            <enclosure url='https://static.news.ru/photo/013746b8-659b-11ee-befd-02420a0000c9_930.jpg' length='0' type="image/jpeg"/>
+            <category>
+                <![CDATA[Ближний Восток]]>
+            </category>
+        </item>
+        <item>
+            <guid isPermaLink="false">https://news.ru/europe/izrail-zakryvaet-vse-turisticheskie-obekty-na-granice-s-livanom/</guid>
+            <title>
+                <![CDATA[Израиль закрывает все туристические объекты на границе с Ливаном]]>
+            </title>
+            <link>https://news.ru/europe/izrail-zakryvaet-vse-turisticheskie-obekty-na-granice-s-livanom/</link>
+            <description>
+                <![CDATA[Израиль закрывает все туристические объекты, которые расположены рядом с границей с Ливаном. Соответствующее распоряжение власти дали после минометного обстрела.]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 08:14:43 +0300</pubDate>
+            <enclosure url='https://static.news.ru/photo/d21c1c7e-6599-11ee-a5c9-02420a0000c9_930.jpg' length='0' type="image/jpeg"/>
+            <category>
+                <![CDATA[Европа]]>
+            </category>
+        </item>
+        <item>
+            <guid isPermaLink="false">https://news.ru/regions/armiya-rossii-pereshla-v-kontrataku-v-dnr-novosti-svo-na-utro-8-oktyabrya/</guid>
+            <title>
+                <![CDATA[ВС России перешли в контратаку в ДНР: новости СВО на утро 8 октября]]>
+            </title>
+            <link>https://news.ru/regions/armiya-rossii-pereshla-v-kontrataku-v-dnr-novosti-svo-na-utro-8-oktyabrya/</link>
+            <description>
+                <![CDATA[Последние новости об СВО на Украине ]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 08:00:00 +0300</pubDate>
+            <enclosure url='https://static.news.ru/photo/72c68b26-6597-11ee-9446-02420a0000c9_930.jpg' length='0' type="image/jpeg"/>
+            <category>
+                <![CDATA[Регионы]]>
+            </category>
+        </item>
+        <item>
+            <guid isPermaLink="false">https://news.ru/usa/ot-nih-net-zashity-v-ssha-priznali-voennoe-preimushestvo-rossii/</guid>
+            <title>
+                <![CDATA[«От них нет защиты»: в США назвали грозное оружие России]]>
+            </title>
+            <link>https://news.ru/usa/ot-nih-net-zashity-v-ssha-priznali-voennoe-preimushestvo-rossii/</link>
+            <description>
+                <![CDATA[Экс-разведчик ЦРУ Макговерн: гиперзвуковые ракеты России оказались неуязвимы]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 07:54:13 +0300</pubDate>
+            <enclosure url='https://static.news.ru/photo/34861d10-6590-11ee-afeb-02420a0000c9_930.jpg' length='0' type="image/jpeg"/>
+            <category>
+                <![CDATA[США]]>
+            </category>
+        </item>
+        <item>
+            <guid isPermaLink="false">https://news.ru/europe/nazvany-problemy-slomivshie-boevoj-duh-vsu/</guid>
+            <title>
+                <![CDATA[Названы проблемы, сломившие боевой дух ВСУ]]>
+            </title>
+            <link>https://news.ru/europe/nazvany-problemy-slomivshie-boevoj-duh-vsu/</link>
+            <description>
+                <![CDATA[South China Morning Post: в украинских войсках выросло количество дезертиров]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 07:26:03 +0300</pubDate>
+            <enclosure url='https://static.news.ru/photo/1eed1f78-6593-11ee-8431-02420a0000c9_930.jpg' length='0' type="image/jpeg"/>
+            <category>
+                <![CDATA[Европа]]>
+            </category>
+        </item>
+        <item>
+            <guid isPermaLink="false">https://news.ru/europe/v-velikobritanii-nazvali-poezdku-zelenskogo-v-ssha-provalom/</guid>
+            <title>
+                <![CDATA[В Великобритании назвали поездку Зеленского в США провалом]]>
+            </title>
+            <link>https://news.ru/europe/v-velikobritanii-nazvali-poezdku-zelenskogo-v-ssha-provalom/</link>
+            <description>
+                <![CDATA[UnHerd: визит Зеленского в США войдет в историю как дипломатический провал]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 07:16:20 +0300</pubDate>
+            <enclosure url='https://static.news.ru/photo/266b0702-6592-11ee-b71d-02420a0000c9_930.jpg' length='0' type="image/jpeg"/>
+            <category>
+                <![CDATA[Европа]]>
+            </category>
+        </item>
+        <item>
+            <guid isPermaLink="false">https://news.ru/usa/effektnye-kontrataki-vs-rf-na-ukraine-voshitili-zapad/</guid>
+            <title>
+                <![CDATA[Эффектные контратаки ВС РФ на Украине восхитили Запад]]>
+            </title>
+            <link>https://news.ru/usa/effektnye-kontrataki-vs-rf-na-ukraine-voshitili-zapad/</link>
+            <description>
+                <![CDATA[19FortyFive: эффективные маневры дали россиянам преимущество перед ВСУ]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 06:58:04 +0300</pubDate>
+            <enclosure url='https://static.news.ru/photo/3e87f828-658c-11ee-8984-02420a0000c9_930.jpg' length='0' type="image/jpeg"/>
+            <category>
+                <![CDATA[США]]>
+            </category>
+        </item>
+        <item>
+            <guid isPermaLink="false">https://news.ru/usa/v-ssha-ocenili-shansy-vstupleniya-ukrainy-v-es-i-nato/</guid>
+            <title>
+                <![CDATA[В США оценили шансы вступления Украины в ЕС и НАТО]]>
+            </title>
+            <link>https://news.ru/usa/v-ssha-ocenili-shansy-vstupleniya-ukrainy-v-es-i-nato/</link>
+            <description>
+                <![CDATA[Офицер Уилкерсон: Украина не сможет вступить ни в ЕС, ни в НАТО]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 06:53:55 +0300</pubDate>
+            <enclosure url='https://static.news.ru/photo/994e0bf2-658d-11ee-8d7f-02420a0000c9_930.jpg' length='0' type="image/jpeg"/>
+            <category>
+                <![CDATA[США]]>
+            </category>
+        </item>
+        <item>
+            <guid isPermaLink="false">https://news.ru/society/shtrafy-za-pyanoe-vozhdenie-elektrosamokatov-podderzhivayut-pochti-80-rossiyan/</guid>
+            <title>
+                <![CDATA[Штрафы за пьяное вождение электросамокатов поддерживают почти 80% россиян]]>
+            </title>
+            <link>https://news.ru/society/shtrafy-za-pyanoe-vozhdenie-elektrosamokatov-podderzhivayut-pochti-80-rossiyan/</link>
+            <description>
+                <![CDATA[Большинство россиян, а именно 77%, поддерживают введении штрафов для водителей электросамокатов и велосипедов, двигающихся в состоянии алкогольного опьянения. Против высказался только каждый девятый респондент (11%).]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 06:45:17 +0300</pubDate>
+            <enclosure url='https://static.news.ru/photo/6ea28280-658c-11ee-835d-02420a0000c9_930.jpg' length='0' type="image/jpeg"/>
+            <category>
+                <![CDATA[Общество]]>
+            </category>
+        </item>
+        <item>
+            <guid isPermaLink="false">https://news.ru/society/moskvicham-poobeshali-rezkoe-poteplenie-na-sleduyushej-nedele/</guid>
+            <title>
+                <![CDATA[Москвичам пообещали резкое потепление на следующей неделе]]>
+            </title>
+            <link>https://news.ru/society/moskvicham-poobeshali-rezkoe-poteplenie-na-sleduyushej-nedele/</link>
+            <description>
+                <![CDATA[Вильфанд: в Москве с 12 октября ожидается повышение температуры]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 06:43:32 +0300</pubDate>
+            <enclosure url='https://static.news.ru/photo/13fe783e-6582-11ee-b18e-02420a0000c9_930.jpg' length='0' type="image/jpeg"/>
+            <category>
+                <![CDATA[Общество]]>
+            </category>
+        </item>
+        <item>
+            <guid isPermaLink="false">https://news.ru/russia/premiya-za-knigi-ili-politiku-kak-zapad-vosprinyal-nobelevku-solzhenicyna/</guid>
+            <title>
+                <![CDATA[Премия за книги или политику? Как Запад воспринял Нобелевку Солженицына ]]>
+            </title>
+            <link>https://news.ru/russia/premiya-za-knigi-ili-politiku-kak-zapad-vosprinyal-nobelevku-solzhenicyna/</link>
+            <description>
+                <![CDATA[8 октября 1970 года шведская академия присудила Александру Солженицыну премию по литературе. Что писала об этом иностранная пресса]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 06:40:53 +0300</pubDate>
+            <enclosure url='https://static.news.ru/photo/342c100c-6533-11ee-8b22-02420a0000c9_930.jpg' length='0' type="image/jpeg"/>
+            <category>
+                <![CDATA[Россия]]>
+            </category>
+        </item>
+        <item>
+            <guid isPermaLink="false">https://news.ru/near-east/raketnaya-ataka-razrushila-bolnicu-na-yuge-izrailya/</guid>
+            <title>
+                <![CDATA[Ракетная атака разрушила больницу на юге Израиля]]>
+            </title>
+            <link>https://news.ru/near-east/raketnaya-ataka-razrushila-bolnicu-na-yuge-izrailya/</link>
+            <description>
+                <![CDATA[Ракетный удар со стороны сектора Газа разрушил медицинский центр в городе Ашкелон на юге Израиля. Снаряд попал в мост между корпусами больницы.]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 06:29:12 +0300</pubDate>
+            <enclosure url='https://static.news.ru/photo/359a5dee-6589-11ee-9756-02420a0000c9_930.jpg' length='0' type="image/jpeg"/>
+            <category>
+                <![CDATA[Ближний Восток]]>
+            </category>
+        </item>
+        <item>
+            <guid isPermaLink="false">https://news.ru/society/nazvany-samye-populyarnye-u-rossiyan-zimnie-kurorty/</guid>
+            <title>
+                <![CDATA[Названы самые популярные у россиян страны для зимнего отдыха]]>
+            </title>
+            <link>https://news.ru/society/nazvany-samye-populyarnye-u-rossiyan-zimnie-kurorty/</link>
+            <description>
+                <![CDATA[Aviasales: Турция и ОАЭ вошли в топ-5 самых популярных стран для зимнего отдыха]]>
+            </description>
+            <pubDate>Sun, 08 Oct 2023 06:27:07 +0300</pubDate>
+            <enclosure url='https://static.news.ru/photo/b3f0a770-6589-11ee-b486-02420a0000c9_930.jpg' length='0' type="image/jpeg"/>
+            <category>
+                <![CDATA[Общество]]>
+            </category>
+        </item>
+    </channel>
+</rss>
