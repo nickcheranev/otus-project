@@ -12,7 +12,13 @@ import java.util.Map;
 @Data
 @Accessors(chain = true)
 public class AppProperties {
+    /**
+     * URL внешнего ресурса
+     */
     private Map<String, Resource> resources;
+    /**
+     * Топики Kafka для публикации событий (входящие и исходящие)
+     */
     private Map<String, Event> events;
 
     @Data

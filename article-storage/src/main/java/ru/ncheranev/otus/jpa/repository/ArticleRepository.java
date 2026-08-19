@@ -11,5 +11,11 @@ import java.util.Optional;
  */
 @Repository
 public interface ArticleRepository extends ListCrudRepository<Article, Long> {
+    /**
+     * Поиск статьи по URI
+     *
+     * @param uri URI статьи
+     * @return статья, если найдена
+     */
     Optional<Article> findByUri(String uri);
 }

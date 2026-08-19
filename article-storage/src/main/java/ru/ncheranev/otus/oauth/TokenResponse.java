@@ -3,6 +3,9 @@ package ru.ncheranev.otus.oauth;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
+/**
+ * Ответ от сервера авторизации
+ */
 @Data
 public class TokenResponse {
     @JsonProperty("access_token")

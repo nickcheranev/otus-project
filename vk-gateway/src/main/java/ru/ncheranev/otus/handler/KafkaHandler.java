@@ -10,7 +10,7 @@ import ru.ncheranev.otus.service.MessageProducer;
 import ru.ncheranev.otus.util.MapperUtil;
 
 /**
- * Обработчик события Kafka 'Сообщение готово к отправке'
+ * Обработчик событий Kafka
  */
 @Component
 @RequiredArgsConstructor
@@ -18,6 +18,11 @@ import ru.ncheranev.otus.util.MapperUtil;
 public class KafkaHandler {
     private final MessageProducer messageProducer;
 
+    /**
+     * Обработчик сообщения 'Сообщение готово к отправке'
+     *
+     * @param request сообщение
+     */
     @KafkaListener(id = "otus-group", topics = "${app.events.vk-gateway.topic}")
     public void listen(Message<CommunicatorDto> request) {
         log.debug("Получено из Kafka: {}", request);

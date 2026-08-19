@@ -64,14 +64,13 @@ public class SecurityConfig {
     }
 
     /**
-     * Цепочка фильтров для остальных запросов (включая H2 Console)
+     * Цепочка фильтров для остальных запросов
      */
     @Bean
     @Order(2)
     public SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/h2-console/**").permitAll()
                         .requestMatchers("/actuator/**").permitAll()
                         .requestMatchers("/test/**").permitAll() // Для тестирования
                         .anyRequest().authenticated()

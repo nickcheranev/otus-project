@@ -17,6 +17,12 @@ import ru.ncheranev.otus.service.CreateArticleService;
 public class CreateArticleServiceImpl implements CreateArticleService {
     private final ArticleService articleService;
 
+    /**
+     * Создать статью
+     *
+     * @param articleDto данные статьи
+     * @return данные статьи
+     */
     @Override
     @Transactional
     public ArticleDto createArticle(ArticleDto articleDto) {

@@ -9,6 +9,9 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
+/**
+ * Категория
+ */
 @Entity
 @Data
 @Accessors(chain = true)

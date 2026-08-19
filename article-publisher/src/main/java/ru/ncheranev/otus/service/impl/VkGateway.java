@@ -19,6 +19,11 @@ public class VkGateway implements CommunicatorService {
     private final KafkaTemplate<String, CommunicatorDto> kafkaTemplate;
     private final AppProperties appProperties;
 
+    /**
+     * Опубликовать события для отправки сообщения в VK
+     *
+     * @param dto данные сообщения
+     */
     @Override
     public void sendMessage(CommunicatorDto dto) {
         var topic = appProperties.getEvents().get("vk-gateway").getTopic();

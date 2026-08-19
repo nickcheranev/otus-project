@@ -9,6 +9,12 @@ import lombok.experimental.Accessors;
 @Data
 @Accessors(chain = true)
 public class CommunicatorDto {
+    /**
+     * Статья
+     */
     private ArticleDto article;
+    /**
+     * Подписчик
+     */
     private SubscriberDto subscriber;
 }

@@ -25,6 +25,14 @@ public class EntryProviderImpl implements EntryProvider {
     private final RestOperations restOperations;
     private final AppProperties appProperties;
 
+    /**
+     * Получить записи из rss-extractor по uri
+     *
+     * @param uri     uri
+     * @param headers заголовки
+     * @return данные RSS feed
+     * @throws NoSuchElementException исключение 'Элемент не найден'
+     */
     @Override
     @Auth
     public EntryDto getEntry(String uri, HttpHeaders headers) throws NoSuchElementException {

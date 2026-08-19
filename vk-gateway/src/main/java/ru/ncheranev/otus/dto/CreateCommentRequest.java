@@ -9,5 +9,8 @@ import lombok.experimental.Accessors;
 @Data
 @Accessors(chain = true)
 public class CreateCommentRequest {
+    /**
+     * Текст сообщения
+     */
     private String message;
 }

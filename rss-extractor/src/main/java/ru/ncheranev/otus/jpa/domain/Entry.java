@@ -11,6 +11,9 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Set;
 
+/**
+ * RSS feed
+ */
 @Entity
 @Data
 @EqualsAndHashCode(of = "uri")

@@ -38,9 +38,14 @@ public class OAuth2TokenServiceImpl implements OAuth2TokenService {
         this.tokenUri = properties.getProvider().get("auth-server").getTokenUri();
         this.clientId = registration.getClientId();
         this.clientSecret = registration.getClientSecret();
-        this.scope = String.join(" ",registration.getScope());
+        this.scope = String.join(" ", registration.getScope());
     }
 
+    /**
+     * Получить / запросить токен
+     *
+     * @return токен
+     */
     @Override
     public synchronized String getAccessToken() {
         if (cachedAccessToken != null && tokenExpiryTime != null

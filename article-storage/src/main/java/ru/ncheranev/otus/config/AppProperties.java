@@ -12,7 +12,13 @@ import java.util.Map;
 @Data
 @Accessors(chain = true)
 public class AppProperties {
+    /**
+     * Ресурсы
+     */
     private Map<String, Resource> resources;
+    /**
+     * События
+     */
     private Map<String, Event> events;
 
     @Data

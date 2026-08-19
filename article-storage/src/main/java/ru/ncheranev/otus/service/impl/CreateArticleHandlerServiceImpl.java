@@ -23,6 +23,11 @@ public class CreateArticleHandlerServiceImpl implements CreateArticleHandlerServ
     private final ArticleService articleService;
     private final EntryProvider entryProvider;
 
+    /**
+     * Обработчик события создания статьи.
+     *
+     * @param message сообщение с данными для создания статьи
+     */
     @Override
     public void createArticleHandle(Message<String> message) {
         var uri = message.getPayload();

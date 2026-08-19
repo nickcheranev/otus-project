@@ -11,5 +11,11 @@ import java.util.List;
  */
 @Repository
 public interface CategoryRepository extends ListCrudRepository<Category, String> {
+    /**
+     * Найти категории по списку имен
+     *
+     * @param categories список имен категорий
+     * @return список категорий
+     */
     List<Category> findAllByNameIn(List<String> categories);
 }

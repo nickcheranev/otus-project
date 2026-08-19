@@ -20,11 +20,22 @@ import java.util.List;
 public class ArticleController {
     private final ArticleService articleService;
 
+    /**
+     * Получить все статьи
+     *
+     * @return список статей
+     */
     @GetMapping
     public List<ArticleDto> getAll() {
         return articleService.findAll();
     }
 
+    /**
+     * Получить статью по id
+     *
+     * @param id id статьи
+     * @return статья
+     */
     @GetMapping("/{id}")
     public ResponseEntity<ArticleDto> getById(@PathVariable Long id) {
         return ResponseEntity.of(articleService.findById(id));

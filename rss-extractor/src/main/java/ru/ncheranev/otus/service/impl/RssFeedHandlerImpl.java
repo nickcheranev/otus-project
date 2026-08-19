@@ -26,6 +26,11 @@ public class RssFeedHandlerImpl implements RssFeedHandler {
     private final KafkaTemplate<String, String> kafkaTemplate;
     private final AppProperties appProperties;
 
+    /**
+     * Обработать событие 'RSS feed получен'
+     *
+     * @param syndMessage сообщение с RSS feed
+     */
     @Override
     public void handle(Message<?> syndMessage) {
         var syndEntry = (SyndEntry) syndMessage.getPayload();

@@ -12,7 +12,6 @@ import org.springframework.context.annotation.Configuration;
 public class AppProperties {
 
     private Vk vk;
-//    private String key;
 
     @Data
     public static class Vk {

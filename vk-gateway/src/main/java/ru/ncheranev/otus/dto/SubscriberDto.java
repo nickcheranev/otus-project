@@ -11,8 +11,20 @@ import java.util.Set;
 @Data
 @Accessors(chain = true)
 public class SubscriberDto {
+    /**
+     * Идентификатор подписчика
+     */
     private Long id;
+    /**
+     * Имя подписчика
+     */
     private String name;
+    /**
+     * Список категорий
+     */
     private Set<String> categories;
+    /**
+     * Email подписчика
+     */
     private String email;
 }

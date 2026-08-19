@@ -20,16 +20,21 @@ import java.util.List;
 public class CategoryServiceImpl implements CategoryService {
     private final CategoryRepository categoryRepository;
 
+    /**
+     * Создать отсутствующие категории, по списку наименований
+     *
+     * @param names Список наименований категорий
+     */
     @Override
     @Transactional
     public void createAbsentByNames(List<String> names) {
-        if (CollectionUtils.isEmpty(names)){
+        if (CollectionUtils.isEmpty(names)) {
             return;
         }
         var present = categoryRepository.findAllByNameIn(names);
         var absents = names.stream()
                 .filter(name -> !present.stream().map(Category::getName).toList().contains(name))
                 .toList();
-        categoryRepository.saveAll(absents.stream().map( name -> new Category().setName(name)).toList());
+        categoryRepository.saveAll(absents.stream().map(name -> new Category().setName(name)).toList());
     }
 }

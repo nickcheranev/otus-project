@@ -19,6 +19,9 @@ import java.util.List;
 public class PopulateServiceImpl implements PopulateService {
     private final EntityManager em;
 
+    /**
+     * Записать в БД тестовые данные подписчика/категории
+     */
     @Override
     @Transactional
     public void populate() {

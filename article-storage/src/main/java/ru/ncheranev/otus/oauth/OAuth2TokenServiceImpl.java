@@ -41,6 +41,11 @@ public class OAuth2TokenServiceImpl implements OAuth2TokenService {
         this.scope = String.join(" ", registration.getScope());
     }
 
+    /**
+     * Получить / запросить токен
+     *
+     * @return токен
+     */
     @Override
     public synchronized String getAccessToken() {
         if (cachedAccessToken != null && tokenExpiryTime != null

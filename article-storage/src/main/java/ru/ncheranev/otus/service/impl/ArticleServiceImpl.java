@@ -31,6 +31,12 @@ public class ArticleServiceImpl implements ArticleService {
     private final CategoryService categoryService;
     private final AppProperties appProperties;
 
+    /**
+     * Создать статью
+     *
+     * @param articleDto данные статьи
+     * @return созданная статья
+     */
     @Override
     @Transactional
     public ArticleDto create(ArticleDto articleDto) {
@@ -46,6 +52,13 @@ public class ArticleServiceImpl implements ArticleService {
         }
     }
 
+    /**
+     * Присвоить категории статье
+     *
+     * @param articleId     ид статьи
+     * @param categoryNames список наименований категорий для присвоения
+     * @return статья
+     */
     @Override
     @Transactional
     public ArticleDto categorize(Long articleId, List<String> categoryNames) {
@@ -60,6 +73,11 @@ public class ArticleServiceImpl implements ArticleService {
         return MapperUtil.toDto(categorizedArticle);
     }
 
+    /**
+     * Опубликовать событие в Kafka 'Создана новая статья'
+     *
+     * @param articleId идентификатор статьи
+     */
     @Override
     @Transactional
     public void publishToKafka(Long articleId) {
@@ -68,14 +86,25 @@ public class ArticleServiceImpl implements ArticleService {
         kafkaTemplate.send(message);
     }
 
+    /**
+     * Получить список статей
+     *
+     * @return список статей
+     */
     @Override
-    @Transactional(readOnly=true)
+    @Transactional(readOnly = true)
     public List<ArticleDto> findAll() {
         return articleRepository.findAll().stream().map(MapperUtil::toDto).toList();
     }
 
+    /**
+     * Получить статью по id
+     *
+     * @param id идентификатор статьи
+     * @return статья
+     */
     @Override
-    @Transactional(readOnly=true)
+    @Transactional(readOnly = true)
     public Optional<ArticleDto> findById(Long id) {
         var found = articleRepository.findById(id);
         if (found.isPresent()) {
@@ -85,8 +114,14 @@ public class ArticleServiceImpl implements ArticleService {
         }
     }
 
+    /**
+     * Найти статью по uri
+     *
+     * @param uri поле uri в статье
+     * @return статья, если найдена
+     */
     @Override
-    @Transactional(readOnly=true)
+    @Transactional(readOnly = true)
     public Optional<ArticleDto> findByUri(String uri) {
         return articleRepository.findByUri(uri).map(MapperUtil::toDto);
     }

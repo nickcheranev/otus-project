@@ -15,8 +15,14 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(of = "id")
 @SequenceGenerator(name = "category_seq", sequenceName = "category_seq", allocationSize = 1)
 public class Category {
+    /**
+     * id
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "category_seq")
     private Long id;
+    /**
+     * Наименование категории
+     */
     private String name;
 }

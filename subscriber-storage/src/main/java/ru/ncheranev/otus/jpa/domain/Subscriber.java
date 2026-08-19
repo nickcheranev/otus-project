@@ -20,12 +20,24 @@ import java.util.List;
 @EqualsAndHashCode(of = "id")
 @Accessors(chain = true)
 public class Subscriber implements Serializable {
+    /**
+     * Идентификатор
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "subscriber_seq")
     private Long id;
+    /**
+     * Имя
+     */
     @Column(unique = true)
     private String name;
+    /**
+     * Email
+     */
     private String email;
+    /**
+     * Список категорий
+     */
     @ManyToMany
     @JoinTable(name = "subscriber_category",
             joinColumns = @JoinColumn(name = "subscriber_id"),

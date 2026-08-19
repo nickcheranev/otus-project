@@ -13,13 +13,25 @@ import java.util.Map;
 @Accessors(chain = true)
 public class AppProperties {
 
+    /**
+     * Данные поставщика RSS
+     */
     private Source source;
+    /**
+     * Топики событий Kafka
+     */
     private Map<String, Event> events;
 
     @Data
     @Accessors(chain = true)
     public static class Source {
+        /**
+         * URL источника
+         */
         private String url;
+        /**
+         * Ключ
+         */
         private String key;
     }
 

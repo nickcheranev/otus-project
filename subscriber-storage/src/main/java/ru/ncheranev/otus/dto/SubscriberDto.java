@@ -11,8 +11,20 @@ import java.util.List;
 @Data
 @Accessors(chain = true)
 public class SubscriberDto {
+    /**
+     * Идентификатор подписчика
+     */
     private Long id;
+    /**
+     * Имя подписчика
+     */
     private String name;
+    /**
+     * Список категорий
+     */
     private List<String> categories;
+    /**
+     * Email подписчика
+     */
     private String email;
 }
